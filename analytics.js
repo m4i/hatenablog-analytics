@@ -1,4 +1,6 @@
 (function(_gaq){
+  if (/[&?]preview=/.test(location.search)) return;
+
   var scripts = document.getElementsByTagName('script');
   var account = scripts[scripts.length - 1].innerHTML;
 
