@@ -1,4 +1,5 @@
 (function(_gaq){
+  if (/^\/preview\b/.test(location.pathname)) return;
   if (/[&?]preview=/.test(location.search)) return;
 
   var scripts = document.getElementsByTagName('script');
